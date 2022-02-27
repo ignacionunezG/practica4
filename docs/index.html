@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>F1 Blog</title>
+
+
+      <!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    <link href="index.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    
+
+
+<main class="container">
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-12 px-0 text-center">
+          <h1 class="display-4 fst-italic">Buscador de pilotos de Fórmula 1</h1>
+          <p class="lead my-3">Busca a pilotos de Fórmula 1 en función de las temporadas en las que corrieron, de algún GP en concreto, del su número de coche o de su escudería</p>
+        </div>
+      </div>
+      
+  <div class="container formulario border border-3 mb-2 text-center">
+      <form class="row g-3 d-flex">
+        <div class="col md-3">
+            <label for="inputPiloto" class="form-label">Piloto</label>
+            <input type="name" class="form-control" id="Piloto">
+        </div>
+        <div class="col md-3">
+            <label for="inputTemporada" class="form-label">Temporada</label>
+            <input type="number" class="form-control" id="Temporada">
+        </div>
+        <div class="col md-3">
+            <label for="inputGP" class="form-label">Gran Premio</label>
+            <input type="text" class="form-control" id="gp">
+          </div>        
+        <div class="col-md-3">
+            <label for="inputEscuderia" class="form-label">Escuderia</label>
+            <input type="text" class="form-control" id="Escuderia">
+        </div>
+        <button type="submit" class="btn btn-outline-danger" style="margin:0.9em" id="btn-form">Buscar</button>
+    </form>
+
+        <h3 id="mensaje">
+        
+        </h3>
+  </div>
+
+  <div class="d-flex justify-content-center pb-2 mt-2">
+    <div class="spinner-border text-primary visually-hidden" role="status" id="loading">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+</div>
+<!--RESULTADOS-->  
+  <div class="container">
+    <table class="table table-dark table-striped border border-3 res text-center" id="tabla" style="visibility:visible;">
+      <thead>
+          <tr>
+              <th></th>
+              <th>Fecha de Nacimiento</th>
+              <th>Número de coche</th>
+              <th>Nacionalidad</th>
+          </tr>
+      </thead>
+      <tbody id="data" style="border-collapse: collapse;">
+      </tbody>
+    </table>
+</div>
+</main>
+
+  <script src="../js/bootstrap.bundle.js"></script>
+  <script src="index.js" ></script>
+</body>
+</html>

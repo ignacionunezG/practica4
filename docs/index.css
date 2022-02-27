@@ -1,0 +1,22 @@
+/* stylelint-disable selector-list-comma-newline-after */
+
+/* stylelint-disable selector-list-comma-newline-after */
+
+  
+html, body{
+    background-image: url("https://graffica.info/wp-content/uploads/2017/11/F1_Unveil_Images_Final-640x400.png");
+    background-repeat: repeat;
+        }
+  .formulario{
+    border-color: rgb(184, 55, 55);
+    background-color: #fff;
+    border-collapse:separate;
+    border-radius:14px !important;
+    }
+  
+  
+  
+    
+
+
+
