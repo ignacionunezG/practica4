@@ -60,8 +60,8 @@ function generarTabla()
     if (piloto !== ""){
         extra2 += "/" + piloto
     }
-    api = "http://ergast.com/api/f1/" + extra + "drivers" + extra2 + ".json";
-      
+    api = "https://ergast.com/api/f1/" + extra + "drivers" + extra2 + ".json";
+    console.log(api)
     
     fetch(api) 
             .then(response =>  response.json())
