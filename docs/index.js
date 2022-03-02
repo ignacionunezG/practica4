@@ -42,7 +42,7 @@ function generarTabla()
     extra="";
     extra2="";
 
-    let api = "http://ergast.com/api/f1/" + extra + "drivers" + extra2;
+    let api = "https://ergast.com/api/f1/" + extra + "drivers" + extra2;
 
     if (temporada !== ""){
         extra += temporada + "/";
